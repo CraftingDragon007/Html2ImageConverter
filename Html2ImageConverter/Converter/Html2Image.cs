@@ -58,7 +58,7 @@ namespace Html2ImageConverter.Converter
                     RedirectStandardOutput = true,
                     RedirectStandardError = true,
                     FileName = "/bin/bash",
-                    Arguments = "which wkhtmltoimage"
+                    Arguments = "-c \"which wkhtmltoimage\""
 
                 });
                 string answer = process.StandardOutput.ReadToEnd();
